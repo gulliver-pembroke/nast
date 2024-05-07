@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nast"
+description = "Utilities for NationStates."
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+  "aiofile",
+  "aiohttp",
+]
+authors = [
+    {name = "Gulliver Pembroke", email = "gulliverpembroke@gmail.com"}
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "nast.__version__"}
+
