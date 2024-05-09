@@ -7,14 +7,22 @@ name = "nast"
 description = "Utilities for NationStates."
 readme = "README.md"
 license = {file = "LICENSE"}
+requires-python = ">= 3.11"
 dependencies = [
   "aiofile",
   "aiohttp",
+  "pydantic",
+  "pydantic-xml",
 ]
 authors = [
     {name = "Gulliver Pembroke", email = "gulliverpembroke@gmail.com"}
 ]
 dynamic = ["version"]
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+]
 
 [tool.setuptools.dynamic]
 version = {attr = "nast.__version__"}

@@ -1,0 +1,393 @@
+<NATION id="testlandia">
+<NAME>Testlandia</NAME>
+<DBID>1</DBID>
+<TYPE>Hive Mind</TYPE>
+<FULLNAME>The Hive Mind of Testlandia</FULLNAME>
+<MOTTO>Fixed, thanks.</MOTTO>
+<CATEGORY>Inoffensive Centrist Democracy</CATEGORY>
+<UNSTATUS>WA Delegate</UNSTATUS>
+<ENDORSEMENTS>nationalist_gold_union</ENDORSEMENTS>
+<GAVOTE>UNDECIDED</GAVOTE>
+<SCVOTE>UNDECIDED</SCVOTE>
+<ISSUES_ANSWERED>146</ISSUES_ANSWERED>
+<FREEDOM>
+<CIVILRIGHTS>Very Good</CIVILRIGHTS>
+<ECONOMY>Powerhouse</ECONOMY>
+<POLITICALFREEDOM>Excellent</POLITICALFREEDOM>
+</FREEDOM>
+<REGION>Testregionia</REGION>
+<POPULATION>45032</POPULATION>
+<TAX>87.7</TAX>
+<ANIMAL>★★★ nautilus ★★★</ANIMAL>
+<ANIMALTRAIT>frolics freely in the nation's sparkling oceans</ANIMALTRAIT>
+<CURRENCY>Kro-bro-ünze</CURRENCY>
+<FLAG>
+https://www.nationstates.net/images/flags/uploads/testlandia__656619.svg
+</FLAG>
+<BANNER>v1</BANNER>
+<BANNERS>
+<BANNER>v1</BANNER>
+<BANNER>t23</BANNER>
+<BANNER>h1</BANNER>
+<BANNER>wa1</BANNER>
+<BANNER>c4</BANNER>
+<BANNER>l20</BANNER>
+<BANNER>b14</BANNER>
+<BANNER>l7</BANNER>
+<BANNER>o4</BANNER>
+<BANNER>m3</BANNER>
+<BANNER>l13</BANNER>
+<BANNER>m2</BANNER>
+<BANNER>x6</BANNER>
+</BANNERS>
+<DEMONYM>Testlandian</DEMONYM>
+<DEMONYM2>Testlandian</DEMONYM2>
+<DEMONYM2PLURAL>Testlandians</DEMONYM2PLURAL>
+<GDP>3028320312564630</GDP>
+<INCOME>67248</INCOME>
+<RICHEST>81354</RICHEST>
+<POOREST>54311</POOREST>
+<MAJORINDUSTRY>Information Technology</MAJORINDUSTRY>
+<CRIME>
+Crime is totally unknown, thanks to a very well-funded police force and progressive social policies in education and welfare.
+</CRIME>
+<SENSIBILITIES>compassionate, democratic</SENSIBILITIES>
+<GOVTPRIORITY>Healthcare</GOVTPRIORITY>
+<GOVT>
+<ADMINISTRATION>3.9</ADMINISTRATION>
+<DEFENCE>11.9</DEFENCE>
+<EDUCATION>20.6</EDUCATION>
+<ENVIRONMENT>20.4</ENVIRONMENT>
+<HEALTHCARE>24.4</HEALTHCARE>
+<COMMERCE>4.8</COMMERCE>
+<INTERNATIONALAID>0.5</INTERNATIONALAID>
+<LAWANDORDER>6.8</LAWANDORDER>
+<PUBLICTRANSPORT>3.2</PUBLICTRANSPORT>
+<SOCIALEQUALITY>1.2</SOCIALEQUALITY>
+<SPIRITUALITY>0.0</SPIRITUALITY>
+<WELFARE>2.2</WELFARE>
+</GOVT>
+<SECTORS>
+<BLACKMARKET>0.13</BLACKMARKET>
+<GOVERNMENT>93.62</GOVERNMENT>
+<INDUSTRY>5.30</INDUSTRY>
+<PUBLIC>0.95</PUBLIC>
+</SECTORS>
+<GOVTDESC>
+It is difficult to tell where the omnipresent government stops and the rest of society begins, but it juggles the competing demands of Healthcare, Education, and Environment. It meets to discuss matters of state in the capital city of Tést City.
+</GOVTDESC>
+<INDUSTRYDESC>
+The powerhouse Testlandian economy, worth a remarkable 3,028 trillion Kro-bro-ünzes a year, is driven almost entirely by government activity. The industrial sector is solely comprised of the Information Technology industry. Average income is 67,248 Kro-bro-ünzes, and distributed extremely evenly, with little difference between the richest and poorest citizens.
+</INDUSTRYDESC>
+<NOTABLE>
+rum-swilling pirates, museums and concert halls, and hatred of cheese
+</NOTABLE>
+<NOTABLES>
+<NOTABLE>compulsory vegetarianism</NOTABLE>
+<NOTABLE>hatred of cheese</NOTABLE>
+<NOTABLE>museums and concert halls</NOTABLE>
+<NOTABLE>pith helmet sales</NOTABLE>
+<NOTABLE>punitive income tax rates</NOTABLE>
+<NOTABLE>rum-swilling pirates</NOTABLE>
+</NOTABLES>
+<ADMIRABLE>safe</ADMIRABLE>
+<ADMIRABLES>
+<ADMIRABLE>cultured</ADMIRABLE>
+<ADMIRABLE>efficient</ADMIRABLE>
+<ADMIRABLE>environmentally stunning</ADMIRABLE>
+<ADMIRABLE>genial</ADMIRABLE>
+<ADMIRABLE>safe</ADMIRABLE>
+<ADMIRABLE>socially progressive</ADMIRABLE>
+</ADMIRABLES>
+<FOUNDED>0</FOUNDED>
+<FOUNDEDTIME>0</FOUNDEDTIME>
+<FIRSTLOGIN>0</FIRSTLOGIN>
+<LASTLOGIN>1715140397</LASTLOGIN>
+<LASTACTIVITY>21 hours ago</LASTACTIVITY>
+<INFLUENCE>Eminence Grise</INFLUENCE>
+<PUBLICSECTOR>94.6</PUBLICSECTOR>
+<DEATHS>
+<CAUSE type="Old Age">92.7</CAUSE>
+<CAUSE type="Lost in Wilderness">7.3</CAUSE>
+</DEATHS>
+<LEADER>Violet</LEADER>
+<LEADER>Violet</LEADER>
+<CAPITAL>Tést City</CAPITAL>
+<CAPITAL>Tést City</CAPITAL>
+<RELIGION>Neo-Violetism</RELIGION>
+<RELIGION>Neo-Violetism</RELIGION>
+<POLICIES>
+<POLICY>
+<NAME>Devolution</NAME>
+<PIC>t64</PIC>
+<CAT>Government</CAT>
+<DESC>
+Government power is substantially delegated to local authorities.
+</DESC>
+</POLICY>
+<POLICY>
+<NAME>Native Representation</NAME>
+<PIC>t42</PIC>
+<CAT>Government</CAT>
+<DESC>Only native-born citizens may hold elected office.</DESC>
+</POLICY>
+<POLICY>
+<NAME>Marriage Equality</NAME>
+<PIC>p25</PIC>
+<CAT>Society</CAT>
+<DESC>Citizens of the same sex may marry.</DESC>
+</POLICY>
+<POLICY>
+<NAME>Vegetarianism</NAME>
+<PIC>a5</PIC>
+<CAT>Society</CAT>
+<DESC>Vegetarianism is compulsory.</DESC>
+</POLICY>
+<POLICY>
+<NAME>Gun Control</NAME>
+<PIC>k2</PIC>
+<CAT>Law &amp; Order</CAT>
+<DESC>Citizens are forbidden from owning firearms.</DESC>
+</POLICY>
+<POLICY>
+<NAME>Capitalism</NAME>
+<PIC>i56</PIC>
+<CAT>Economy</CAT>
+<DESC>
+Private industry is permitted within a market-based economy.
+</DESC>
+</POLICY>
+<POLICY>
+<NAME>No Drugs</NAME>
+<PIC>r14</PIC>
+<CAT>Economy</CAT>
+<DESC>All recreational drugs are prohibited.</DESC>
+</POLICY>
+<POLICY>
+<NAME>Climate Treaty</NAME>
+<PIC>l10</PIC>
+<CAT>International</CAT>
+<DESC>
+The nation is a signatory to an international climate treaty.
+</DESC>
+</POLICY>
+</POLICIES>
+<CENSUS>
+<SCALE id="75">
+<SCORE>12994.30</SCORE>
+<RANK>7180</RANK>
+<RRANK>4</RRANK>
+</SCALE>
+</CENSUS>
+<RCENSUS id="75">4</RCENSUS>
+<WCENSUS id="75">7180</WCENSUS>
+<LEGISLATION>
+<LAW>
+political detractors refer to Violet as 'that Bigtopian puppet'
+</LAW>
+<LAW>
+dubiously qualified Skandilundian barristers keep referring to laws as 'government guidelines'
+</LAW>
+<LAW>
+Violet's office has a newly installed Max-Man arcade game programmed by a 5th-grader
+</LAW>
+<LAW>
+Testlandians struggle to cut tofu steak with a spoon
+</LAW>
+</LEGISLATION>
+<HAPPENINGS>
+<EVENT>
+<TIMESTAMP>1714795880</TIMESTAMP>
+<TEXT>
+@@testlandia@@ was ranked in the Top 1% of the world for Most Valuable International Artwork and the Top 5% for Most World Assembly Endorsements and Most Influential.
+</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714277483</TIMESTAMP>
+<TEXT>
+@@testlandia@@ was ranked in the Top 1% of the world for Highest Economic Output, Most Developed, Most Advanced Public Education, Most Beautiful Environments, and Highest Food Quality.
+</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714018299</TIMESTAMP>
+<TEXT>
+@@testlandia@@ lodged a message on the %%testregionia%% Regional Message Board.
+</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714015592</TIMESTAMP>
+<TEXT>
+Following new legislation in @@testlandia@@, Testlandians struggle to cut tofu steak with a spoon.
+</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714015516</TIMESTAMP>
+<TEXT>
+Following new legislation in @@testlandia@@, Violet's office has a newly installed Max-Man arcade game programmed by a 5th-grader.
+</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1712722170</TIMESTAMP>
+<TEXT>
+@@testlandia@@ was ranked in the Top 5% of the world for Safest.
+</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1712557607</TIMESTAMP>
+<TEXT>
+Following new legislation in @@testlandia@@, dubiously qualified Skandilundian barristers keep referring to laws as 'government guidelines'.
+</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1711414435</TIMESTAMP>
+<TEXT>
+Following new legislation in @@testlandia@@, political detractors refer to Violet as 'that Bigtopian puppet'.
+</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1711210172</TIMESTAMP>
+<TEXT>
+@@testlandia@@ was reclassified from "New York Times Democracy" to "Inoffensive Centrist Democracy".
+</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1711153900</TIMESTAMP>
+<TEXT>@@testlandia@@ was endorsed by @@gorutimania@@.</TEXT>
+</EVENT>
+</HAPPENINGS>
+<FACTBOOKS>0</FACTBOOKS>
+<DISPATCHES>12</DISPATCHES>
+<FACTBOOKLIST/>
+<DISPATCHLIST>
+<DISPATCH id="1">
+<TITLE>How to Write a Dispatch</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1332332021</CREATED>
+<EDITED>1415948041</EDITED>
+<VIEWS>34261</VIEWS>
+<SCORE>812</SCORE>
+</DISPATCH>
+<DISPATCH id="330837">
+<TITLE>The Complete List of NSCodes</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1416487649</CREATED>
+<EDITED>1673501033</EDITED>
+<VIEWS>138780</VIEWS>
+<SCORE>3792</SCORE>
+</DISPATCH>
+<DISPATCH id="347510">
+<TITLE>Test</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Bulletin</CATEGORY>
+<SUBCATEGORY>Opinion</SUBCATEGORY>
+<CREATED>1419925409</CREATED>
+<EDITED>1671830395</EDITED>
+<VIEWS>3289</VIEWS>
+<SCORE>93</SCORE>
+</DISPATCH>
+<DISPATCH id="874170">
+<TITLE>N-Day: What You Need to Know</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1503609600</CREATED>
+<EDITED>1632605234</EDITED>
+<VIEWS>85574</VIEWS>
+<SCORE>1956</SCORE>
+</DISPATCH>
+<DISPATCH id="884159">
+<TITLE>Keyboard Shortcuts</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1505420955</CREATED>
+<EDITED>1505444342</EDITED>
+<VIEWS>3156</VIEWS>
+<SCORE>104</SCORE>
+</DISPATCH>
+<DISPATCH id="1215900">
+<TITLE>RMB Search</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1559175416</CREATED>
+<EDITED>1559175526</EDITED>
+<VIEWS>4356</VIEWS>
+<SCORE>193</SCORE>
+</DISPATCH>
+<DISPATCH id="1359303">
+<TITLE>UTF8</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1588222065</CREATED>
+<EDITED>0</EDITED>
+<VIEWS>747</VIEWS>
+<SCORE>15</SCORE>
+</DISPATCH>
+<DISPATCH id="1365545">
+<TITLE>API Test</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1588807236</CREATED>
+<EDITED>0</EDITED>
+<VIEWS>1020</VIEWS>
+<SCORE>15</SCORE>
+</DISPATCH>
+<DISPATCH id="1458836">
+<TITLE>Table types</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1604881463</CREATED>
+<EDITED>1604966356</EDITED>
+<VIEWS>2068</VIEWS>
+<SCORE>54</SCORE>
+</DISPATCH>
+<DISPATCH id="1460885">
+<TITLE>Testing Colored Spoiler Text</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1605230371</CREATED>
+<EDITED>0</EDITED>
+<VIEWS>998</VIEWS>
+<SCORE>8</SCORE>
+</DISPATCH>
+<DISPATCH id="1523482">
+<TITLE>Testing unusual characters post-upgrade</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1616664463</CREATED>
+<EDITED>1672132797</EDITED>
+<VIEWS>1190</VIEWS>
+<SCORE>18</SCORE>
+</DISPATCH>
+<DISPATCH id="1814627">
+<TITLE>Test</TITLE>
+<AUTHOR>testlandia</AUTHOR>
+<CATEGORY>Meta</CATEGORY>
+<SUBCATEGORY>Reference</SUBCATEGORY>
+<CREATED>1672132835</CREATED>
+<EDITED>0</EDITED>
+<VIEWS>409</VIEWS>
+<SCORE>22</SCORE>
+</DISPATCH>
+</DISPATCHLIST>
+<WABADGES> </WABADGES>
+<TGCANRECRUIT>1</TGCANRECRUIT>
+<TGCANCAMPAIGN>1</TGCANCAMPAIGN>
+<ZOMBIE>
+<ZACTION>export</ZACTION>
+<ZACTIONINTENDED>exterminate</ZACTIONINTENDED>
+<SURVIVORS>3590</SURVIVORS>
+<ZOMBIES>35240</ZOMBIES>
+<DEAD>6202</DEAD>
+</ZOMBIE>
+</NATION>
