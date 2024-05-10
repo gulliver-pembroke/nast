@@ -3,7 +3,9 @@ from datetime import datetime, timedelta
 from enum import StrEnum
 import re
 from typing import List, Optional
+from urllib.parse import urlparse
 
+from datetimerange import DateTimeRange
 from pydantic import field_validator
 from pydantic_xml import attr, BaseXmlModel, element, wrapped
 
@@ -210,6 +212,7 @@ class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
     population: Optional[int] = element(tag="POPULATION", default=None)
     tax: Optional[float] = element(tag="TAX", default=None)
     animal: Optional[str] = element(tag="ANIMAL", default=None)
+    animal_trait: Optional[str] = element(tag="ANIMALTRAIT", default=None)
     currency: Optional[str] = element(tag="CURRENCY", default=None)
     flag: Optional[str] = element(tag="FLAG", default=None)
     demonym_adjective: Optional[str] = element(tag="DEMONYM", default=None)
@@ -221,17 +224,17 @@ class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
     poorest: Optional[int] = element(tag="POOREST", default=None)
     major_industry: Optional[MajorIndustry] = element(tag="MAJORINDUSTRY", default=None)
     crime: Optional[str] = element(tag="CRIME", default=None)
-    sensibilities: Optional[str] = element(tag="SENSIBILITIES", default=None)
-    goverment_priority: Optional[GovernmentPriority] = element(tag="GOVERNMENTPRIORITY", default=None)
+    sensibilities: Optional[List[str]] = element(tag="SENSIBILITIES", default=None)
+    goverment_priority: Optional[GovernmentPriority] = element(tag="GOVTPRIORITY", default=None)
     budget: Optional[GovernmentBudget] = element(tag="GOVT", default=None)
     first_login: Optional[datetime] = element(tag="FIRSTLOGIN", default=None)
     last_login: Optional[datetime] = element(tag="LASTLOGIN", default=None)
-    # last_activity: Optional[LastActivityRange] = element(tag="LASTACTIVITY", default=None)
+    last_activity: Optional[str] = element(tag="LASTACTIVITY", default=None)
     influence: Optional[InfluenceRank] = element(tag="INFLUENCE", default=None)
     # freedom scores
     public_sector: Optional[float] = element(tag="PUBLICSECTOR", default=None)
     deaths: List[DeathPercentage] = wrapped("DEATHS", element(tag="CAUSE"))
-    lead: Optional[str] = element(tag="LEADER", default=None)
+    leader: Optional[str] = element(tag="LEADER", default=None)
     capital: Optional[str] = element(tag="CAPITAL", default=None)
     religion: Optional[str] = element(tag="RELIGION", default=None)
     factbooks: Optional[int] = element(tag="FACTBOOKS", default=None)
@@ -239,27 +242,38 @@ class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
 
     @field_validator("endorsements", mode="before")
     @classmethod
-    def validate_endorsements(cls, raw):
+    def transform_endorsements(cls, raw):
         return raw[0].split(",") if raw else []
 
     @field_validator("population", mode="before")
     @classmethod
-    def validate_population(cls, raw):
+    def transform_population(cls, raw):
         return int(raw) * 1000000
 
-    #@field_validator("last_activity", mode="before")
+    @field_validator("flag", mode="after")
     @classmethod
-    def validate_last_activity(cls, raw):
+    def transform_flag(cls, raw):
+        return urlparse(raw.strip())
+
+    @field_validator("sensibilities", mode="before")
+    @classmethod
+    def transform_sensibilities(cls, raw):
+        return raw[0].split(", ") if raw else []
+
+    @field_validator("last_activity", mode="after")
+    @classmethod
+    def transform_last_activity(cls, raw):
         match = re.search(r"(?:(\d+) (minute|hour|day)s?|(Seconds)) ago", raw)
         if match is None:
-            return
+            return raw
         now = datetime.now()
         if match.group(3) is not None:
-            return LastActivityRange(now - timedelta(minutes=1), now)
+            return DateTimeRange(now - timedelta(minutes=1), now)
         else:
+            unit, val = match.group(2), int(match.group(1))
             return LastActivityRange(
-                now - timedelta(**{f"{match.group(2)}s": int(match.group(1)) + 1}),
-                now - timedelta(**{f"{match.group(2)}s": int(match.group(1))})
+                now - timedelta(**{f"{unit}s": val + 1}),
+                now - timedelta(**{f"{unit}s": val})
             )
 
     @field_validator("influence", mode="before")

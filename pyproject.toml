@@ -11,6 +11,7 @@ requires-python = ">= 3.11"
 dependencies = [
   "aiofile",
   "aiohttp",
+  "DateTimeRange",
   "pydantic",
   "pydantic-xml",
 ]
