@@ -233,7 +233,7 @@ class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
     influence: Optional[InfluenceRank] = element(tag="INFLUENCE", default=None)
     # freedom scores
     public_sector: Optional[float] = element(tag="PUBLICSECTOR", default=None)
-    deaths: List[DeathPercentage] = wrapped("DEATHS", element(tag="CAUSE"))
+    deaths: Optional[List[DeathPercentage]] = wrapped("DEATHS", element(tag="CAUSE", default=None))
     leader: Optional[str] = element(tag="LEADER", default=None)
     capital: Optional[str] = element(tag="CAPITAL", default=None)
     religion: Optional[str] = element(tag="RELIGION", default=None)
