@@ -9,7 +9,7 @@ from pytest_httpserver import HTTPServer
 from werkzeug import Request, Response
 
 from nast.aio import api
-from nast.model import NationCategory, WAStatus
+from nast.model import NationCategory, WAStatus, WAVote
 
 
 NATION_SHARD_MAP = {
@@ -44,7 +44,7 @@ def mock_api_response(request, name, dirname, shard_map):
 def find_xml(name, dirname):
     for filename in listdir(dirname):
         if filename[:-4] == name:
-            with open(path.join(dirname, filename)) as file:
+            with open(path.join(dirname, filename), encoding="utf8") as file:
                 return file.read()
 
 
@@ -74,6 +74,15 @@ def test_nation_all_shards():
         ("motto", "motto", "Fixed, thanks."),
         ("category", "category", NationCategory.INOFFENSIVE_CENTRIST_DEMOCRACY),
         ("wa", "wa_status", WAStatus.DELEGATE),
+        ("endorsements", "endorsements", ["nationalist_gold_union", "international_silver_combine"]),
+        ("gavote", "ga_vote", WAVote.UNDECIDED),
+        ("scvote", "sc_vote", WAVote.UNDECIDED),
+        ("region", "region", "Testregionia"),
+        ("population", "population", 45032000000),
+        ("tax", "tax", 87.7),
+        ("animal", "animal", "★★★ nautilus ★★★"),
+        ("animaltrait", "animal_trait", "frolics freely in the nation's sparkling oceans"),
+        ("currency", "currency", "Kro-bro-ünze"),
     ]
 )
 def test_nation_shards(shard, attr, expected):

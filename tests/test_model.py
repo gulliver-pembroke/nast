@@ -1,7 +1,7 @@
 from os import path
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
-from nast.model import GovernmentPriority, MajorIndustry, Nation, NationCategory, WAStatus, WAVote
+from nast.model import GovernmentPriority, MajorIndustry, Nation, NationCategory, Region, WAStatus, WAVote
 
 
 def test_nation_shards():
@@ -48,3 +48,23 @@ def test_nation_shards():
     assert nation.budget.social_equality == 1.2
     assert nation.budget.spirituality == 0
     assert nation.budget.welfare == 2.2
+    assert nation.sectors.black_market == 0.13
+    assert nation.sectors.government == 93.62
+    assert nation.sectors.industry == 5.3
+    assert nation.sectors.public == 0.95
+
+
+def test_region_shards():
+    filename = path.join(path.dirname(__file__), "data/regions/testregionia.xml")
+    with open(filename, encoding="utf8") as file:
+        xml = file.read()
+    region = Region.from_xml(xml)
+    assert region.name == "Testregionia"
+    assert region.dbid == 1
+    assert region.factbook == "Testing. Testing. Is this thing on?"
+    assert region.num_nations == 37
+    assert region.nations[0] == "testlandia"
+    assert region.wa_nations == ["testlandia", "nationalist_gold_union", "praestare"]
+    assert region.delegate == "testlandia"
+    assert region.delegate_authority.world_assembly
+    assert not region.delegate_authority.border_control

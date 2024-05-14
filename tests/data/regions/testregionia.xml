@@ -1,0 +1,636 @@
+<REGION id="testregionia">
+<NAME>Testregionia</NAME>
+<DBID>1</DBID>
+<LASTUPDATE>1715529930</LASTUPDATE>
+<LASTMAJORUPDATE>1715486887</LASTMAJORUPDATE>
+<LASTMINORUPDATE>1715529930</LASTMINORUPDATE>
+<FACTBOOK><![CDATA[Testing. Testing. Is this thing on?]]></FACTBOOK>
+<DISPATCHES>1636939,1446209,444406,920115,1301085,330837,299923,346295</DISPATCHES>
+<NUMNATIONS>37</NUMNATIONS>
+<NATIONS>testlandia:server_hamsters:typing_monkeys:paradroid:martians:space_station:world:melvani:olvaria:voice_of_mod:airavlo:a_badly_conceived_designation:nationalist_gold_union:the_blaatschapens_nation:greenerica:altmoras_i:destructive_government_ex-nation_seeker:destructive_government_ex-nation_seeker2:the_knicks:herete:walpole:myfriendistan:lemon_42:praestare:kashyyyyyyyk:tutorealm:himoliane:ationstates:-i_shipit-:null_island:fake_testlandia:puppet1:boowzin:soulscard30:ale_heamnandranoikub:the_mountainous_states:xeraxix</NATIONS>
+<NUMUNNATIONS>3</NUMUNNATIONS>
+<UNNATIONS>testlandia,nationalist_gold_union,praestare</UNNATIONS>
+<DELEGATE>testlandia</DELEGATE>
+<DELEGATEAUTH>W</DELEGATEAUTH>
+<OFFICERS>
+<OFFICER><NATION>a_badly_conceived_designation</NATION>
+<OFFICE>Vice-Tester</OFFICE>
+<AUTHORITY>SABCP</AUTHORITY>
+<TIME>1686017244</TIME>
+<BY>testlandia</BY>
+<ORDER>4</ORDER>
+</OFFICER>
+<OFFICER><NATION>iron_fist_grizzlies</NATION>
+<OFFICE>Vice-Delegate</OFFICE>
+<AUTHORITY>SABCP</AUTHORITY>
+<TIME>1686017239</TIME>
+<BY>testlandia</BY>
+<ORDER>2</ORDER>
+</OFFICER>
+<OFFICER><NATION>olvaria</NATION>
+<OFFICE>Tester-in-Chief</OFFICE>
+<AUTHORITY>ABCP</AUTHORITY>
+<TIME>1683070620</TIME>
+<BY>testlandia</BY>
+<ORDER>1</ORDER>
+</OFFICER>
+<OFFICER><NATION>testlandia</NATION>
+<OFFICE>&#x26;lt;h1&#x26;gt;Field Tester&#x26;lt;/h1&#x26;gt;</OFFICE>
+<AUTHORITY>B</AUTHORITY>
+<TIME>1597897244</TIME>
+<BY>testlandia</BY>
+<ORDER>-10</ORDER>
+</OFFICER>
+
+</OFFICERS>
+<BANNED>tag48:tag44</BANNED>
+<DELEGATEVOTES>2</DELEGATEVOTES>
+<GAVOTE>
+<FOR></FOR>
+<AGAINST></AGAINST>
+
+</GAVOTE>
+<SCVOTE>
+<FOR></FOR>
+<AGAINST></AGAINST>
+
+</SCVOTE>
+<FRONTIER>0</FRONTIER>
+<FOUNDER>testlandia</FOUNDER>
+<FOUNDED>10 years 181 days ago</FOUNDED>
+<FOUNDEDTIME>1384476179</FOUNDEDTIME>
+<POWER>Low</POWER>
+<FLAG>https://www.nationstates.net/images/flags/uploads/rflags/testregionia__493308.svg</FLAG>
+<BANNER>749142</BANNER>
+<BANNERURL>/images/rbanners/uploads/testregionia__749142.jpg</BANNERURL>
+<BANNERBY>testlandia</BANNERBY>
+<EMBASSIES>
+<EMBASSY>Space Sector RPRA</EMBASSY>
+<EMBASSY>The Moon</EMBASSY>
+<EMBASSY>Zhaucauozian Friendship</EMBASSY>
+<EMBASSY>The Cuckoos Egg</EMBASSY>
+<EMBASSY>Free Thought</EMBASSY>
+<EMBASSY>Snazzy</EMBASSY>
+<EMBASSY>Equilism</EMBASSY>
+<EMBASSY>The Wellspring</EMBASSY>
+<EMBASSY type="invited">Allied Fronts</EMBASSY>
+<EMBASSY type="invited">Croaso</EMBASSY>
+</EMBASSIES>
+<EMBASSYRMB>all</EMBASSYRMB>
+<WABADGES>
+</WABADGES>
+
+<TAGS><TAG>Issues Player</TAG>
+<TAG>Silly</TAG>
+<TAG>Medium</TAG>
+<TAG>Surreal</TAG>
+</TAGS>
+<MESSAGES>
+<POST id="55058974">
+	<TIMESTAMP>1709134313</TIMESTAMP>
+	<NATION>olvaria</NATION>
+	<STATUS>0</STATUS>
+	<LIKES>2</LIKES>
+	<LIKERS>national_freedom:kashyyyyyyyk</LIKERS>
+	<MESSAGE><![CDATA[Dear Testing Colleagues,
+
+We are pleased that we did not participate in this year's explosive gift exchange event. Upon closer audit of our nation's defense capabilities, it was determined that we failed to invest in defenses against incoming "couriers". We would have ended up giving so much, and would have likely received far more. I am being advised by one of the ministers of communication to cease speaking in euphemisms and simply say "we would have been nuked enough times to kill our 20 billion citizens a hundred million times over". Your wisdom and pacificism have been duly recorded by our great Ministry of Testing. Thus do we return to the great daily grind of testing, marking the results, and writing about it in big essays. 
+
+Yours in peace,
+The Testing Committee of Olvaria]]></MESSAGE>
+</POST>
+<POST id="55211290">
+	<TIMESTAMP>1710281402</TIMESTAMP>
+	<NATION>the_hurricane</NATION>
+	<STATUS>0</STATUS>
+	<EDITED>1710281423</EDITED>
+	<LIKES>0</LIKES>
+	<MESSAGE><![CDATA[Wazzup nerds.]]></MESSAGE>
+</POST>
+<POST id="55220923">
+	<TIMESTAMP>1710360290</TIMESTAMP>
+	<NATION>a_badly_conceived_designation</NATION>
+	<STATUS>0</STATUS>
+	<LIKES>2</LIKES>
+	<LIKERS>national_freedom:the_hurricane</LIKERS>
+	<MESSAGE><![CDATA[The Nhishakushakunodmutoumo of The Hurricane?]]></MESSAGE>
+</POST>
+<POST id="55224732">
+	<TIMESTAMP>1710386864</TIMESTAMP>
+	<NATION>the_hurricane</NATION>
+	<STATUS>0</STATUS>
+	<LIKES>0</LIKES>
+	<MESSAGE><![CDATA[[quote=a_badly_conceived_designation;55220923]The Nhishakushakunodmutoumo of The Hurricane?[/quote]
+You're not the first one to make that joke. :P]]></MESSAGE>
+</POST>
+<POST id="55317305">
+	<TIMESTAMP>1711153893</TIMESTAMP>
+	<NATION>gorutimania</NATION>
+	<STATUS>0</STATUS>
+	<LIKES>0</LIKES>
+	<MESSAGE><![CDATA[hi max :3]]></MESSAGE>
+</POST>
+<POST id="55496303">
+	<TIMESTAMP>1712629076</TIMESTAMP>
+	<NATION>soulscard30</NATION>
+	<STATUS>0</STATUS>
+	<LIKES>2</LIKES>
+	<LIKERS>lemon_42:kashyyyyyyyk</LIKERS>
+	<MESSAGE><![CDATA[[b]W region, w founder, w governor, w delegate!
+Thanks for making Nationstates great again.[/b]]]></MESSAGE>
+</POST>
+<POST id="55570000">
+	<TIMESTAMP>1714018299</TIMESTAMP>
+	<NATION>testlandia</NATION>
+	<STATUS>0</STATUS>
+	<LIKES>5</LIKES>
+	<LIKERS>olvaria:lemon_42:kashyyyyyyyk:fake_testlandia:the_mountainous_states</LIKERS>
+	<MESSAGE><![CDATA[Test post.]]></MESSAGE>
+</POST>
+<POST id="55578653">
+	<TIMESTAMP>1714093718</TIMESTAMP>
+	<NATION>lemon_42</NATION>
+	<STATUS>0</STATUS>
+	<LIKES>0</LIKES>
+	<MESSAGE><![CDATA[Oh, great heavens!
+
+glad that's (kinda) fixed!]]></MESSAGE>
+</POST>
+<POST id="55583220">
+	<TIMESTAMP>1714145500</TIMESTAMP>
+	<NATION>olvaria</NATION>
+	<STATUS>0</STATUS>
+	<LIKES>2</LIKES>
+	<LIKERS>lemon_42:kashyyyyyyyk</LIKERS>
+	<MESSAGE><![CDATA[A monumental test to be remembered for the ages! The data resulting from data loss will be interesting to analyze...]]></MESSAGE>
+</POST>
+<POST id="55594613">
+	<TIMESTAMP>1714237984</TIMESTAMP>
+	<NATION>a_badly_conceived_designation</NATION>
+	<STATUS>0</STATUS>
+	<LIKES>3</LIKES>
+	<LIKERS>olvaria:lemon_42:kashyyyyyyyk</LIKERS>
+	<MESSAGE><![CDATA[[quote=olvaria;55583220]The data resulting from data loss will be interesting to analyze...[/quote]
+:D]]></MESSAGE>
+</POST>
+</MESSAGES>
+<HAPPENINGS>
+<EVENT>
+<TIMESTAMP>1715516004</TIMESTAMP>
+<TEXT>@@jamangland@@ of the region %%croaso%% proposed constructing embassies.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1715456102</TIMESTAMP>
+<TEXT>@@herete@@ arrived from %%osiris%%.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1715418405</TIMESTAMP>
+<TEXT>@@araskas@@ of the region %%allied_fronts%% proposed constructing embassies.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1715239211</TIMESTAMP>
+<TEXT>@@xeraxix@@ arrived from %%the_east_pacific%%.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714909435</TIMESTAMP>
+<TEXT>@@helvestria@@ of the region %%heidiland%% proposed constructing embassies.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714752925</TIMESTAMP>
+<TEXT>@@the_holy_spirits@@ of the region %%two%% proposed constructing embassies.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714562177</TIMESTAMP>
+<TEXT>@@ymeuura@@ of the region %%lonia_kreptia_llor%% withdrew an invitation to construct embassies.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714493297</TIMESTAMP>
+<TEXT>@@national_freedom@@ ceased to exist.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714371987</TIMESTAMP>
+<TEXT>@@huangtian@@ of the region %%boundless_firmament%% proposed constructing embassies.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1714338808</TIMESTAMP>
+<TEXT>@@ymeuura@@ of the region %%lonia_kreptia_llor%% proposed constructing embassies.</TEXT>
+</EVENT>
+
+</HAPPENINGS>
+<HISTORY>
+<EVENT>
+<TIMESTAMP>1689178006</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1686024613</TIMESTAMP>
+<TEXT>@@testlandia@@ removed as WA Delegate (reign: 21 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1686017093</TIMESTAMP>
+<TEXT>Governor @@testlandia@@ abdicated.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1684210188</TIMESTAMP>
+<TEXT>@@praestare@@ removed as WA Delegate (reign: 2 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1684037174</TIMESTAMP>
+<TEXT>@@praestare@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1683346039</TIMESTAMP>
+<TEXT>@@nationalist_gold_union@@ removed as WA Delegate (reign: 8 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1682654823</TIMESTAMP>
+<TEXT>@@nationalist_gold_union@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1682482054</TIMESTAMP>
+<TEXT>@@boowzin@@ removed as WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1682438629</TIMESTAMP>
+<TEXT>@@boowzin@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1682395560</TIMESTAMP>
+<TEXT>@@vetzlia@@ removed as WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1682352295</TIMESTAMP>
+<TEXT>@@vetzlia@@ elected WA Delegate (ending @@nationalist_gold_union@@'s reign).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1682309209</TIMESTAMP>
+<TEXT>@@nationalist_gold_union@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1682136472</TIMESTAMP>
+<TEXT>EO:the_wellspring.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1678338432</TIMESTAMP>
+<TEXT>@@caliawii@@ removed as WA Delegate (reign: 1 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1678251977</TIMESTAMP>
+<TEXT>@@caliawii@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1653321910</TIMESTAMP>
+<TEXT>Regional Founder @@testlandia@@ ceased to exist.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1640063151</TIMESTAMP>
+<TEXT>@@testlandia@@ removed as WA Delegate (reign: 1 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1639890414</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1637082221</TIMESTAMP>
+<TEXT>@@testlandia@@ removed as WA Delegate (reign: 2 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1636909421</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1633449828</TIMESTAMP>
+<TEXT>@@baked_heinz_beans@@ removed as WA Delegate (reign: 1 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1633320339</TIMESTAMP>
+<TEXT>@@baked_heinz_beans@@ elected WA Delegate (ending @@testlandia@@'s reign after 5 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1632845034</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1628049972</TIMESTAMP>
+<TEXT>@@greenerica@@ removed as WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1628049962</TIMESTAMP>
+<TEXT>@@greenerica@@ ceased to exist, ending a reign of 210 days.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1609866280</TIMESTAMP>
+<TEXT>@@greenerica@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1609866274</TIMESTAMP>
+<TEXT>@@third_ottoman_reich@@ ceased to exist, ending a reign of 55 days.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1605114268</TIMESTAMP>
+<TEXT>@@third_ottoman_reich@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1605071936</TIMESTAMP>
+<TEXT>@@the_force@@ lost WA Delegate status (reign: 0 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1605071187</TIMESTAMP>
+<TEXT>@@the_force@@ elected WA Delegate (ending @@third_ottoman_reich@@'s reign after 80 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1601395353</TIMESTAMP>
+<TEXT>EC:confederacy_of_the_north.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1598156259</TIMESTAMP>
+<TEXT>@@third_ottoman_reich@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1568822612</TIMESTAMP>
+<TEXT>EC:monkey_island.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1544680276</TIMESTAMP>
+<TEXT>@@testlandia@@ removed as WA Delegate (reign: 1 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1544549424</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1517592712</TIMESTAMP>
+<TEXT>@@testlandia@@ removed as WA Delegate (reign: 94 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1509425732</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1507782691</TIMESTAMP>
+<TEXT>EO:confederacy_of_the_north.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1507566747</TIMESTAMP>
+<TEXT>@@testlandia@@ removed as WA Delegate (reign: 1 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1507480324</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1485584095</TIMESTAMP>
+<TEXT>@@terra_felix_familiaris@@ removed as WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1485584095</TIMESTAMP>
+<TEXT>@@terra_felix_familiaris@@ ceased to exist, ending a reign of 191 days.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1478277805</TIMESTAMP>
+<TEXT>EO:equilism.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1469077609</TIMESTAMP>
+<TEXT>@@terra_felix_familiaris@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1460739183</TIMESTAMP>
+<TEXT>@@testlandia@@ removed as WA Delegate (reign: 58 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1455689133</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1453484906</TIMESTAMP>
+<TEXT>@@lavendera@@ removed as WA Delegate (reign: 75 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1446918936</TIMESTAMP>
+<TEXT>@@lavendera@@ elected WA Delegate (ending @@testlandia@@'s reign after 85 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1445014081</TIMESTAMP>
+<TEXT>EO:snazzy.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1439527816</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1439527815</TIMESTAMP>
+<TEXT>@@translenia@@ ceased to exist, ending a reign of 113 days.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1429680284</TIMESTAMP>
+<TEXT>@@translenia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1427261146</TIMESTAMP>
+<TEXT>EO:free_thought.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1423504100</TIMESTAMP>
+<TEXT>@@akejok@@ ceased to exist, ending a reign of 40 days.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1420004739</TIMESTAMP>
+<TEXT>@@akejok@@ elected WA Delegate (ending @@testlandia@@'s reign after 96 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1411706695</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1411490364</TIMESTAMP>
+<TEXT>@@the_show_nation@@ removed as WA Delegate (reign: 55 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1406738316</TIMESTAMP>
+<TEXT>@@the_show_nation@@ elected WA Delegate (ending @@testlandia@@'s reign after 3 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1406479070</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1405917641</TIMESTAMP>
+<TEXT>@@autoteles@@ ceased to exist, ending a reign of 31 days.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1404576404</TIMESTAMP>
+<TEXT>EO:the_cuckoos_egg.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1403410188</TIMESTAMP>
+<TEXT>EO:monkey_island.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1403368912</TIMESTAMP>
+<TEXT>EO:zhaucauozian_friendship.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1403367808</TIMESTAMP>
+<TEXT>EO:the_moon.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1403324065</TIMESTAMP>
+<TEXT>EO:space_sector_rpra.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1403153060</TIMESTAMP>
+<TEXT>@@autoteles@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1403066735</TIMESTAMP>
+<TEXT>@@catastrophic_terra_nova@@ ceased to exist, ending a reign of 47 days.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1399005916</TIMESTAMP>
+<TEXT>@@catastrophic_terra_nova@@ elected WA Delegate (ending @@testlandia@@'s reign).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1398962566</TIMESTAMP>
+<TEXT>@@testlandia@@ elected WA Delegate (ending @@autoteles@@'s reign after 1 day).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1398833145</TIMESTAMP>
+<TEXT>@@autoteles@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1398401218</TIMESTAMP>
+<TEXT>@@autoteles@@ removed as WA Delegate (reign: 96 days).</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1390023658</TIMESTAMP>
+<TEXT>@@autoteles@@ elected WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1389030059</TIMESTAMP>
+<TEXT>@@kurtz@@ removed as WA Delegate.</TEXT>
+</EVENT>
+<EVENT>
+<TIMESTAMP>1388986968</TIMESTAMP>
+<TEXT>@@kurtz@@ elected WA Delegate.</TEXT>
+</EVENT>
+
+</HISTORY>
+<CENSUS>
+<SCALE id="43">
+<SCORE>61.23</SCORE>
+<RANK>15573</RANK>
+</SCALE>
+</CENSUS>
+<CENSUSRANKS id="43">
+<NATIONS>
+<NATION>
+<NAME>olvaria</NAME>
+<RANK>1</RANK>
+<SCORE>151.49</SCORE>
+</NATION>
+<NATION>
+<NAME>greenerica</NAME>
+<RANK>2</RANK>
+<SCORE>144.69</SCORE>
+</NATION>
+<NATION>
+<NAME>kashyyyyyyyk</NAME>
+<RANK>3</RANK>
+<SCORE>137.13</SCORE>
+</NATION>
+<NATION>
+<NAME>testlandia</NAME>
+<RANK>4</RANK>
+<SCORE>117.19</SCORE>
+</NATION>
+<NATION>
+<NAME>praestare</NAME>
+<RANK>5</RANK>
+<SCORE>115.95</SCORE>
+</NATION>
+<NATION>
+<NAME>soulscard30</NAME>
+<RANK>6</RANK>
+<SCORE>111.8</SCORE>
+</NATION>
+<NATION>
+<NAME>himoliane</NAME>
+<RANK>7</RANK>
+<SCORE>111.25</SCORE>
+</NATION>
+<NATION>
+<NAME>melvani</NAME>
+<RANK>8</RANK>
+<SCORE>102.56</SCORE>
+</NATION>
+<NATION>
+<NAME>ale_heamnandranoikub</NAME>
+<RANK>9</RANK>
+<SCORE>94.42</SCORE>
+</NATION>
+<NATION>
+<NAME>puppet1</NAME>
+<RANK>10</RANK>
+<SCORE>94.28</SCORE>
+</NATION>
+<NATION>
+<NAME>the_knicks</NAME>
+<RANK>11</RANK>
+<SCORE>93.72</SCORE>
+</NATION>
+<NATION>
+<NAME>the_mountainous_states</NAME>
+<RANK>12</RANK>
+<SCORE>88.74</SCORE>
+</NATION>
+<NATION>
+<NAME>walpole</NAME>
+<RANK>13</RANK>
+<SCORE>85.84</SCORE>
+</NATION>
+<NATION>
+<NAME>voice_of_mod</NAME>
+<RANK>14</RANK>
+<SCORE>78.25</SCORE>
+</NATION>
+<NATION>
+<NAME>altmoras_i</NAME>
+<RANK>15</RANK>
+<SCORE>72.84</SCORE>
+</NATION>
+<NATION>
+<NAME>fake_testlandia</NAME>
+<RANK>16</RANK>
+<SCORE>66.08</SCORE>
+</NATION>
+<NATION>
+<NAME>paradroid</NAME>
+<RANK>17</RANK>
+<SCORE>62.35</SCORE>
+</NATION>
+<NATION>
+<NAME>boowzin</NAME>
+<RANK>18</RANK>
+<SCORE>59.95</SCORE>
+</NATION>
+<NATION>
+<NAME>the_blaatschapens_nation</NAME>
+<RANK>19</RANK>
+<SCORE>56.47</SCORE>
+</NATION>
+<NATION>
+<NAME>lemon_42</NAME>
+<RANK>20</RANK>
+<SCORE>49.59</SCORE>
+</NATION>
+</NATIONS>
+</CENSUSRANKS>
+
+
+<ZOMBIE>
+<SURVIVORS>3382</SURVIVORS>
+<ZOMBIES>87197</ZOMBIES>
+<DEAD>404567</DEAD>
+</ZOMBIE>
+</REGION>

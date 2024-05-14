@@ -2,11 +2,11 @@ from collections import namedtuple
 from datetime import datetime, timedelta
 from enum import StrEnum
 import re
-from typing import List, Optional
-from urllib.parse import urlparse
+from typing import Any, List, Optional
 
 from datetimerange import DateTimeRange
-from pydantic import field_validator
+from pydantic import GetCoreSchemaHandler, field_validator, HttpUrl
+from pydantic_core import CoreSchema, core_schema
 from pydantic_xml import attr, BaseXmlModel, element, wrapped
 
 
@@ -105,9 +105,6 @@ class GovernmentPriority(StrEnum):
     WELFARE = "Welfare"
 
 
-LastActivityRange = namedtuple("LastActivityRange", ["start", "end"])
-
-
 class InfluenceRank(StrEnum):
     ZERO = "Zero"
     UNPROVEN = "Unproven"
@@ -196,6 +193,13 @@ class DeathPercentage(BaseXmlModel, tag="CAUSE"):
     percentage: float
 
 
+class Sectors(BaseXmlModel, tag="SECTORS"):
+    black_market: float = element(tag="BLACKMARKET")
+    government: float = element(tag="GOVERNMENT")
+    industry: float = element(tag="INDUSTRY")
+    public: float = element(tag="PUBLIC")
+
+
 class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
     name: Optional[str] = element(tag="NAME", default=None)
     dbid: Optional[int] = element(tag="DBID", default=None)
@@ -203,7 +207,7 @@ class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
     motto: Optional[str] = element(tag="MOTTO", default=None)
     category: Optional[NationCategory] = element(tag="CATEGORY", default=None)
     wa_status: Optional[WAStatus] = element(tag="UNSTATUS", default=None)
-    endorsements: Optional[List[str]] = element(tag="ENDORSEMENTS", default=None)
+    endorsements: Optional[str] = element(tag="ENDORSEMENTS", default=None)
     ga_vote: Optional[WAVote] = element(tag="GAVOTE", default=None)
     sc_vote: Optional[WAVote] = element(tag="SCVOTE", default=None)
     issues_answered: Optional[int] = element(tag="ISSUES_ANSWERED", default=None)
@@ -214,7 +218,7 @@ class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
     animal: Optional[str] = element(tag="ANIMAL", default=None)
     animal_trait: Optional[str] = element(tag="ANIMALTRAIT", default=None)
     currency: Optional[str] = element(tag="CURRENCY", default=None)
-    flag: Optional[str] = element(tag="FLAG", default=None)
+    flag: Optional[HttpUrl] = element(tag="FLAG", default=None)
     demonym_adjective: Optional[str] = element(tag="DEMONYM", default=None)
     demonym: Optional[str] = element(tag="DEMONYM2", default=None)
     demonym_plural: Optional[str] = element(tag="DEMONYM2PLURAL", default=None)
@@ -224,7 +228,7 @@ class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
     poorest: Optional[int] = element(tag="POOREST", default=None)
     major_industry: Optional[MajorIndustry] = element(tag="MAJORINDUSTRY", default=None)
     crime: Optional[str] = element(tag="CRIME", default=None)
-    sensibilities: Optional[List[str]] = element(tag="SENSIBILITIES", default=None)
+    sensibilities: Optional[str] = element(tag="SENSIBILITIES", default=None)
     goverment_priority: Optional[GovernmentPriority] = element(tag="GOVTPRIORITY", default=None)
     budget: Optional[GovernmentBudget] = element(tag="GOVT", default=None)
     first_login: Optional[datetime] = element(tag="FIRSTLOGIN", default=None)
@@ -239,30 +243,28 @@ class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
     religion: Optional[str] = element(tag="RELIGION", default=None)
     factbooks: Optional[int] = element(tag="FACTBOOKS", default=None)
     dispatches: Optional[int] = element(tag="DISPATCHES", default=None)
+    sectors: Optional[Sectors] = element(tag="SECTORS", default=None)
 
-    @field_validator("endorsements", mode="before")
+    @field_validator("endorsements")
     @classmethod
-    def transform_endorsements(cls, raw):
-        return raw[0].split(",") if raw else []
+    def deserialize_endorsements(cls, raw: Optional[str]) -> Optional[List[str]]:
+        return raw if raw is None else raw.split(",")
 
-    @field_validator("population", mode="before")
+    @field_validator("population")
     @classmethod
-    def transform_population(cls, raw):
-        return int(raw) * 1000000
+    def deserialize_population(cls, raw: Optional[int]) -> Optional[int]:
+        return raw if raw is None else raw * 1000000
 
-    @field_validator("flag", mode="after")
+    @field_validator("sensibilities")
     @classmethod
-    def transform_flag(cls, raw):
-        return urlparse(raw.strip())
+    def deserialize_sensibilities(cls, raw: Optional[int]) -> Optional[List[str]]:
+        return raw if raw is None else raw.split(", ")
 
-    @field_validator("sensibilities", mode="before")
+    @field_validator("last_activity")
     @classmethod
-    def transform_sensibilities(cls, raw):
-        return raw[0].split(", ") if raw else []
-
-    @field_validator("last_activity", mode="after")
-    @classmethod
-    def transform_last_activity(cls, raw):
+    def deserialize_last_activity(cls, raw: Optional[str]) -> Optional[DateTimeRange]:
+        if raw is None:
+            return raw
         match = re.search(r"(?:(\d+) (minute|hour|day)s?|(Seconds)) ago", raw)
         if match is None:
             return raw
@@ -271,12 +273,67 @@ class Nation(BaseXmlModel, tag="NATION", search_mode="unordered"):
             return DateTimeRange(now - timedelta(minutes=1), now)
         else:
             unit, val = match.group(2), int(match.group(1))
-            return LastActivityRange(
+            return DateTimeRange(
                 now - timedelta(**{f"{unit}s": val + 1}),
                 now - timedelta(**{f"{unit}s": val})
             )
 
-    @field_validator("influence", mode="before")
+    @field_validator("influence")
     @classmethod
-    def validate_influence(cls, raw):
-        return InfluenceRank(raw)
+    def deserialize_influence(cls, raw: Optional[str]) -> Optional[InfluenceRank]:
+        return raw if raw is None else InfluenceRank(raw)
+
+
+class Authority:
+    executive: bool
+    world_assembly: bool
+    appearance: bool
+    border_control: bool
+    communications: bool
+    embassies: bool
+    polls: bool
+
+    def __init__(self, raw: str):
+        flags = set(raw)
+        self.executive = "X" in flags
+        self.world_assembly = "W" in flags
+        self.appearance = "A" in flags
+        self.border_control = "B" in flags
+        self.communications = "C" in flags
+        self.embassies = "E" in flags
+        self.polls = "P" in flags
+
+
+class Region(BaseXmlModel, tag="REGION", search_mode="unordered"):
+    name: Optional[str] = element(tag="NAME", default=None)
+    dbid: Optional[int] = element(tag="DBID", default=None)
+    last_update: Optional[datetime] = element(tag="LASTUPDATE", default=None)
+    last_major_update: Optional[datetime] = element(tag="LASTMAJORUPDATE", default=None)
+    last_minor_update: Optional[datetime] = element(tag="LASTMINORUPDATE", default=None)
+    factbook: Optional[str] = element(tag="FACTBOOK", default=None)
+    dispatches: Optional[str] = element(tag="DISPATCHES", default=None)
+    num_nations: Optional[int] = element(tag="NUMNATIONS", default=None)
+    nations: Optional[str] = element(tag="NATIONS", default=None)
+    wa_nations: Optional[str] = element(tag="UNNATIONS", default=None)
+    delegate: Optional[str] = element(tag="DELEGATE", default=None)
+    delegate_authority: Optional[str] = element(tag="DELEGATEAUTH", default=None)
+
+    @field_validator("dispatches")
+    @classmethod
+    def deserialize_dispatches(cls, raw: Optional[str]) -> Optional[List[int]]:
+        return raw if raw is None else [int(x) for x in raw.split(",")]
+
+    @field_validator("nations")
+    @classmethod
+    def deserialize_nations(cls, raw: Optional[str]) -> Optional[List[str]]:
+        return raw if raw is None else raw.split(":")
+
+    @field_validator("wa_nations")
+    @classmethod
+    def deserialize_wa_nations(cls, raw: Optional[str]) -> Optional[List[str]]:
+        return raw if raw is None else raw.split(",")
+
+    @field_validator("delegate_authority")
+    @classmethod
+    def deserialize_delegate_authority(cls, raw: Optional[str]) -> Optional[Authority]:
+        return raw if raw is None else Authority(raw)
